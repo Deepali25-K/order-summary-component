@@ -1,50 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 html{
-  font-size: 16px;
+  font-size: 15px;
 }
 
-body{
-  height: 100vh;
+body {
+  background-color: #090B1A;
+  color: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: hsl(224, 23%, 55%);
-  background-color: hsl(225, 100%, 94%);
-  font-family: 'Red Hat Display', sans-serif;
 }
 
 main{
-  height: 20rem;
-  width: 20rem; 
-  border-radius: 20px;
-  background-color: hsl(225, 100%, 98%);
-}
-
-section{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+ font-family: 'Inter', sans-serif;
+  width: 20.9rem;
+  margin: 4rem 0;
+  background-color: hsl(244, 38%, 16%);
   text-align: center;
-  padding: 1.2rem 1.4rem;
+  border-radius: 10px;
 }
 
-img{
+.image{
+  height: 15.3rem;
+  border-radius: 10px 10px 0 0;
+  background-color: hsl(277, 64%, 61%);  
+} 
+
+.image img{
   width: 100%;
-  border-radius: 20px 20px 0 0;
+  height: 100%;
+  background-size: cover;
+  mix-blend-mode: multiply;  
 }
 
-h1{
-  color: hsl(223, 47%, 23%);
+.info{
+  padding: 2.5rem 1.6rem;
 }
 
-div{
-  width: ;
-  background-color: hsl(225, 100%, 94%);
+h2{
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+
+h2 span{
+  color: hsl(277, 64%, 61%);
+}
+
+.info-txt{
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  line-height: 28px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.itm{
+  margin-bottom: 2rem;
+}
+
+.itm span{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.itm p{
+  margin-top: 0.4rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (min-width: 800px){
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image{
+    
+    height: 100%;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .image img{
+    
+  }
+  
+  .stats{
+    display: flex;
+    max-width: ;
+  }
+  
+  .itm span{
+    /*padding: 35px;*/
+    margin-left: 30px;
+  }
+  
+  .itm p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: ;
+  }
+  
+  .info-txt, h2{
+    text-align: left;
+    max-width: 375px;
+    margin-right: 50px;
+    margin-left: 0px;
+    /*margin-left: -60px;*/
+  }
+  
+  .color-overlay{
+    width: 100%;
+    bottom: 364px;
+    border-radius: 0 10px 10px 0;
+  }
 }
