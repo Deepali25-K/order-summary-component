@@ -127,11 +127,19 @@ button:hover{
   }
   
   main{
-    width: 27rem;
+    width: 28rem;
   }
   
   section{
     padding: 2rem 2rem;
+  }
+  
+  h1{
+    font-size: 1.7rem;
+  }
+  
+  .plan{
+    padding: 1.2rem 2rem;
   }
   
   .btn{
